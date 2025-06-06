@@ -1,0 +1,18 @@
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon Group (approximated from user image) -->
+  <g transform="translate(0, -2) scale(0.65)"> 
+    <!-- Green Top-Left Bar -->
+    <path d="M5 10 L35 25 L30 35 L0 20 Z" fill="#8AE05E"/>
+    <!-- Green Bottom-Left Bar -->
+    <path d="M0 40 L30 50 L25 60 L-5 50 Z" fill="#8AE05E"/> 
+    <!-- Blue Top-Right Circle -->
+    <circle cx="45" cy="15" r="8" fill="#4169E1"/>
+    <!-- Blue Bottom Bar -->
+    <path d="M25 30 L55 40 L50 55 L20 45 Z" fill="#4169E1"/>
+  </g>
+  
+  <!-- Text part of the logo -->
+  <text x="45" y="28" font-family="Inter, sans-serif" font-weight="700" font-size="24" fill="#333333"> 
+    BallerAI
+  </text>
+</svg> 
