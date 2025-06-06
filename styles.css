@@ -836,7 +836,7 @@ footer {
     .mobile-nav-links li a.active,
     .desktop-nav-links li a.active {
         background-color: var(--light-blue);
-        color: var(--secondary-blue);
+        color: var(--primary-blue);
         font-weight: 600;
     }
 

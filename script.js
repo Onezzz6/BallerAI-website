@@ -211,5 +211,11 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollTimeout = setTimeout(highlightActiveNav, 10);
     });
 
+    // Path-based active link highlighting for feature pages
+    const path = window.location.pathname;
+    document.querySelectorAll('nav a').forEach(a => {
+        if (a.getAttribute('href') === path) a.classList.add('active');
+    });
+
 }); 
 
