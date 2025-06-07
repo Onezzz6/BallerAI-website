@@ -217,18 +217,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (a.getAttribute('href') === path) a.classList.add('active');
     });
 
-}); 
+    // GA4 App Store Click Tracking - ensure gtag is available
+    if (typeof gtag === 'function') {
+        document.querySelectorAll('.app-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                gtag('event', 'appstore_click', {
+                    event_category: 'outbound',
+                    event_label: window.location.pathname
+                });
+            });
+        });
+    }
 
-
-// GA4 App Store Click Tracking
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('.app-btn');      // all App Store buttons
-  if (!btn) return;
-  if (typeof gtag === 'function') {
-    gtag('event', 'appstore_click', {
-      event_category: 'outbound',
-      event_label: window.location.pathname
-    });
-  }
 }); 
 
