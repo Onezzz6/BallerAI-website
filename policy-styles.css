@@ -1,0 +1,67 @@
+/* Styles for About Us and Legal/Policy Pages */
+.policy-header {
+    background: var(--light-blue);
+    padding: 20px 0;
+}
+.policy-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.policy-header .logo img {
+    height: 40px;
+}
+.policy-header .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+.policy-content {
+    padding: 60px 0;
+}
+.policy-content .container {
+    max-width: 800px;
+}
+.policy-content h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--dark-gray);
+}
+.policy-content h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--dark-gray);
+}
+.policy-content h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-gray);
+}
+.policy-content p, .policy-content li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: var(--medium-gray);
+}
+.policy-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.policy-content a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+.policy-footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+.policy-footer p {
+    margin: 0;
+    color: var(--light-gray);
+} 
