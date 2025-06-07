@@ -219,3 +219,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 }); 
 
+
+// GA4 App Store Click Tracking
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.app-btn');      // all App Store buttons
+  if (!btn) return;
+  if (typeof gtag === 'function') {
+    gtag('event', 'appstore_click', {
+      event_category: 'outbound',
+      event_label: window.location.pathname
+    });
+  }
+}); 
+
