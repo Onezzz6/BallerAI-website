@@ -65,10 +65,10 @@
 
 [[redirects]]
   from = "/app"
-  to = "https://apps.apple.com/fi/app/ballerai/id6742112516"
+  to = "https://apps.apple.com/app/apple-store/id6742112516?pt=127626968&ct=Web_page&mt=8"
   status = 301
 
 [[redirects]]
   from = "/download"
-  to = "https://apps.apple.com/fi/app/ballerai/id6742112516"
+  to = "https://apps.apple.com/app/apple-store/id6742112516?pt=127626968&ct=Web_page&mt=8"
   status = 301 
