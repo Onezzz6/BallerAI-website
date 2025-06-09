@@ -7,14 +7,20 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://balleraiapp.com/load-management/</loc>
+    <lastmod>2025-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://balleraiapp.com/nutrition-tracking/</loc>
-    <lastmod>2025-06-06</lastmod>
+    <lastmod>2025-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://balleraiapp.com/recovery-plans/</loc>
-    <lastmod>2025-06-06</lastmod>
+    <lastmod>2025-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
