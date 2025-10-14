@@ -77,15 +77,55 @@
             <div class="container">
                 <div class="showcase-header hero-style-header">
                     <h1>Gain the edge for your team.</h1>
-                    <h2>Professional-grade performance management and player monitoring for coaches and performance staff.</h2>
-                    <div class="app-download hero-app-download">
-                        <a href="mailto:ballerai.official@gmail.com?subject=BallerAI Teams - Interest" class="app-btn">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contact Us</span>
-                        </a>
-                        <a href="#features" class="app-btn demo-btn">
-                            <i class="fas fa-info-circle"></i>
-                            <span>Learn More</span>
+                    
+                    <!-- Dashboard Carousel -->
+                    <div class="dashboard-carousel">
+                        <div class="mac-frame">
+                            <div class="mac-header">
+                                <div class="mac-buttons">
+                                    <span class="mac-btn close"></span>
+                                    <span class="mac-btn minimize"></span>
+                                    <span class="mac-btn maximize"></span>
+                                </div>
+                                <div class="mac-title" id="carouselTitle">Team Performance Overview</div>
+                            </div>
+                            <div class="mac-screen">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" id="carouselTrack">
+                                        <div class="carousel-slide active">
+                                            <img src="images/team-dashboard.png" alt="BallerAI Team Dashboard - Player Overview" loading="lazy">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="images/desktop-5.png" alt="BallerAI Team Dashboard - Performance Metrics" loading="lazy">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="images/desktop-6.png" alt="BallerAI Team Dashboard - Training Schedule" loading="lazy">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="images/desktop-7.png" alt="BallerAI Team Dashboard - ACWR Risk Management" loading="lazy">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="images/desktop-8.png" alt="BallerAI Team Dashboard - Player Profile" loading="lazy">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="images/desktop-9.png" alt="BallerAI Team Dashboard - Training Calendar" loading="lazy">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="images/desktop-10.png" alt="BallerAI Team Dashboard - Team Analytics" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-btn prev" id="prevBtn">‹</button>
+                                    <button class="carousel-btn next" id="nextBtn">›</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book Demo CTA -->
+                    <div class="demo-cta">
+                        <a href="https://calendly.com/onni-viljamaa/zoom" target="_blank" class="demo-btn">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Book a 10 Min Demo</span>
                         </a>
                     </div>
                 </div>
@@ -93,14 +133,6 @@
         </div>
     </header>
 
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Coming Soon</h2>
-                <p>We're developing powerful tools for teams and performance staff. Stay tuned for updates.</p>
-            </div>
-        </div>
-    </section>
 
     <section id="contact" class="contact">
         <div class="container">
@@ -170,6 +202,51 @@
     <script src="script.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Dashboard Carousel Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const titleElement = document.getElementById('carouselTitle');
+            
+            const titles = [
+                'Team Performance Overview',
+                'Deeper dive in to any metric',
+                'Compare progress of individuals with the team',
+                'Follow ACWR ratio easily',
+                'Compare any metric',
+                'Intelligent warning system lets you see who is at risk',
+                'View individual profiles'
+            ];
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                track.style.transform = `translateX(-${index * 100}%)`;
+                if (titleElement) {
+                    titleElement.textContent = titles[index];
+                }
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+            
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(currentSlide);
+            }
+            
+            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        });
     </script>
 </body>
 </html>
