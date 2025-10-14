@@ -64,4 +64,137 @@
 .policy-footer p {
     margin: 0;
     color: var(--light-gray);
+}
+
+/* Additional styles for account deletion page */
+.deletion-steps {
+    background: var(--light-blue);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.deletion-steps li {
+    margin-bottom: 10px;
+    padding: 8px 0;
+    color: var(--dark-gray);
+}
+
+.warning-box {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-left: 4px solid #fdcb6e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.warning-box h3 {
+    color: #d63031;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.warning-box p, .warning-box li {
+    color: #6c5ce7;
+    margin-bottom: 10px;
+}
+
+.warning-box ul {
+    margin-top: 10px;
+}
+
+.contact-info {
+    background: var(--light-blue);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid var(--primary-green);
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: var(--dark-gray);
+}
+
+.contact-info a {
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+/* Header styles for delete account page */
+header {
+    background-color: var(--white);
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+/* Footer styles for delete account page */
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--light-gray);
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-links a {
+    color: var(--light-gray);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .deletion-steps {
+        padding: 20px;
+    }
+    
+    .warning-box, .contact-info {
+        padding: 15px;
+    }
 } 
