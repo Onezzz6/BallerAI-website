@@ -71,64 +71,130 @@
         </nav>
         <div class="hero">
             <div class="container">
-                <div class="showcase-header hero-style-header">
-                    <h1>Gain the edge for your team.</h1>
-                    
-                    <!-- Dashboard Carousel -->
-                    <div class="dashboard-carousel">
-                        <div class="mac-frame">
-                            <div class="mac-header">
-                                <div class="mac-buttons">
-                                    <span class="mac-btn close"></span>
-                                    <span class="mac-btn minimize"></span>
-                                    <span class="mac-btn maximize"></span>
-                                </div>
-                                <div class="mac-title" id="carouselTitle">Team Performance Overview</div>
-                            </div>
-                            <div class="mac-screen">
-                                <div class="carousel-container">
-                                    <div class="carousel-track" id="carouselTrack">
-                                        <div class="carousel-slide active">
-                                            <img src="images/team-dashboard.png" alt="BallerAI Team Dashboard - Player Overview" loading="lazy">
-                                        </div>
-                                        <div class="carousel-slide">
-                                            <img src="images/desktop-5.png" alt="BallerAI Team Dashboard - Performance Metrics" loading="lazy">
-                                        </div>
-                                        <div class="carousel-slide">
-                                            <img src="images/desktop-6.png" alt="BallerAI Team Dashboard - Training Schedule" loading="lazy">
-                                        </div>
-                                        <div class="carousel-slide">
-                                            <img src="images/desktop-7.png" alt="BallerAI Team Dashboard - ACWR Risk Management" loading="lazy">
-                                        </div>
-                                        <div class="carousel-slide">
-                                            <img src="images/desktop-8.png" alt="BallerAI Team Dashboard - Player Profile" loading="lazy">
-                                        </div>
-                                        <div class="carousel-slide">
-                                            <img src="images/desktop-9.png" alt="BallerAI Team Dashboard - Training Calendar" loading="lazy">
-                                        </div>
-                                        <div class="carousel-slide">
-                                            <img src="images/desktop-10.png" alt="BallerAI Team Dashboard - Team Analytics" loading="lazy">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-btn prev" id="prevBtn">‹</button>
-                                    <button class="carousel-btn next" id="nextBtn">›</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Book Demo CTA -->
-                    <div class="demo-cta">
-                        <a href="https://calendly.com/onni-viljamaa/zoom" target="_blank" class="demo-btn">
+                <div class="hero-content">
+                    <!-- Hero Copy -->
+                    <div class="hero-text">
+                        <h1>One platform for full internal state of your squad.</h1>
+                        <p>Stop guessing and make sure you know your players' internal state as well as you know the external.</p>
+                        <a href="https://calendly.com/onni-viljamaa/zoom" target="_blank" class="primary-cta-btn">
                             <i class="fas fa-calendar-alt"></i>
                             <span>Book A Demo</span>
                         </a>
+                    </div>
+                    
+                    <!-- Product Visual with Tabs -->
+                    <div class="product-visual">
+                        <div class="preview-tabs">
+                            <button class="tab-btn active" data-tab="overview">Overview</button>
+                            <button class="tab-btn" data-tab="deeper">Deeper dive</button>
+                            <button class="tab-btn" data-tab="historical">Historical graphs</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="preview-content">
+                                <div class="preview-card active" id="overview">
+                                    <img src="images/team-dashboard.png" alt="BallerAI team overview dashboard" loading="lazy">
+                                </div>
+                                <div class="preview-card" id="deeper">
+                                    <img src="images/desktop-5.png" alt="BallerAI deeper dive into metrics" loading="lazy">
+                                </div>
+                                <div class="preview-card" id="historical">
+                                    <img src="images/desktop-8.png" alt="BallerAI historical graphs and metrics comparison" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                <!-- Trust Micro-row -->
+                <div class="trust-row">
+                    <div class="trust-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.6 App Store Rating</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-download"></i>
+                        <span>2000+ Downloads</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-users"></i>
+                        <span>Built with 50+ teams across Nordics</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title">One platform for all.</h2>
+            <div class="solution-cards">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Centralized Dashboard</h3>
+                    <p>Combine readiness, recovery, and load into one view.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Smart Warning System</h3>
+                    <p>Automatically flags players entering the danger zone.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Decisions in Minutes</h3>
+                    <p>No manual data cleaning or Excel work.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Complete Internal Visibility</h3>
+                    <p>See every player's internal state and readiness levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <div class="container">
+            <h2 class="section-title">Where we are today.</h2>
+            <div class="proof-stats">
+                <div class="stat-card">
+                    <div class="stat-number">⭐ 4.6</div>
+                    <div class="stat-desc">App Store rating</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">📱 4,000+</div>
+                    <div class="stat-desc">Downloads</div>
+                </div>
+            </div>
+            <p class="proof-subtitle">Built with 50+ pro clubs across Europe</p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to modernize your player monitoring?</h2>
+                <p>Book a free 15-minute walkthrough and see how BallerAI can simplify your staff's workflow.</p>
+                <a href="https://calendly.com/onni-viljamaa/zoom" target="_blank" class="final-cta-btn">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Book A Demo</span>
+                </a>
+                <p class="cta-subtext">No setup, no commitment — just a quick look at what's possible.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="contact">
         <div class="container">
@@ -199,23 +265,11 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
         
-        // Dashboard Carousel Functionality
+        // Premium Carousel Functionality
         document.addEventListener('DOMContentLoaded', function() {
             const track = document.getElementById('carouselTrack');
             const slides = document.querySelectorAll('.carousel-slide');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            const titleElement = document.getElementById('carouselTitle');
-            
-            const titles = [
-                'Team Performance Overview',
-                'Deeper dive in to any metric',
-                'Compare progress of individuals with the team',
-                'Follow ACWR ratio easily',
-                'Compare any metric',
-                'Intelligent warning system lets you see who is at risk',
-                'View individual profiles'
-            ];
+            const dots = document.querySelectorAll('.dot');
             
             let currentSlide = 0;
             const totalSlides = slides.length;
@@ -224,25 +278,701 @@
                 slides.forEach((slide, i) => {
                     slide.classList.toggle('active', i === index);
                 });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
                 track.style.transform = `translateX(-${index * 100}%)`;
-                if (titleElement) {
-                    titleElement.textContent = titles[index];
-                }
             }
             
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % totalSlides;
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
                 showSlide(currentSlide);
-            }
+                });
+            });
+        });
+
+        // Hero Product Preview Tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const previewCards = document.querySelectorAll('.preview-card');
             
-            function prevSlide() {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                showSlide(currentSlide);
-            }
-            
-            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const targetTab = btn.dataset.tab;
+                    
+                    // Update active tab
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Update active preview with fade effect
+                    previewCards.forEach(card => {
+                        card.classList.remove('active');
+                        if (card.id === targetTab) {
+                            card.classList.add('active');
+                        }
+                    });
+                });
+            });
         });
     </script>
+    
+    <style>
+        /* Premium SaaS Hero Styles */
+        .hero {
+            padding: 120px 0 80px;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(65, 105, 225, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-text p {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            max-width: 480px;
+        }
+        
+        .primary-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+            color: white;
+            padding: 18px 32px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+        
+        .primary-cta-btn:hover {
+            background: linear-gradient(135deg, #4169E1, #8AE05E);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(65, 105, 225, 0.3);
+        }
+        
+        .primary-cta-btn i {
+            font-size: 20px;
+        }
+        
+        /* Product Visual */
+        .product-visual {
+            position: relative;
+        }
+        
+        .preview-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            flex-wrap: nowrap;
+        }
+        
+        .tab-btn {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .tab-btn.active,
+        .tab-btn:hover {
+            background: linear-gradient(135deg, #4169E1, #8AE05E);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        
+        .product-card {
+            border: 1px solid #E6E8EA;
+            border-radius: 24px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            position: relative;
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 0;
+        }
+        
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(138, 224, 94, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .preview-content {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .preview-card {
+            display: none;
+            position: relative;
+        }
+        
+        .preview-card.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .preview-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 24px;
+        }
+        
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        /* Carousel Dots */
+        .carousel-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        .dot:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Trust Row */
+        .trust-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            margin-top: 4rem;
+            padding: 3rem 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
+        
+        .trust-item i {
+            color: #fbbf24;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .trust-item span {
+            color: #475569;
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.4;
+            max-width: 180px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0 60px;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+            
+            .hero-text {
+                order: 1;
+            }
+            
+            .product-visual {
+                order: 2;
+            }
+            
+            .product-card {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            
+            .trust-row {
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-top: 3rem;
+            }
+            
+            .carousel-dots {
+                display: none;
+            }
+            
+            .preview-tabs {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 0.75rem;
+            }
+            
+            .tab-btn {
+                max-width: none !important;
+                padding: 10px 12px;
+                font-size: 0.85rem;
+                flex: none !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-content {
+                gap: 2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1.125rem;
+            }
+            
+            .primary-cta-btn {
+                padding: 16px 28px;
+                font-size: 16px;
+            }
+        }
+        
+        /* Section Styling */
+        .section-title {
+            font-size: clamp(2.25rem, 4vw, 2.75rem);
+            font-weight: 700;
+            color: #0f172a;
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+        }
+        
+        /* Pain Section */
+        .pain-section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .pain-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .pain-card {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .pain-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+        
+        .pain-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #ef4444, #f87171);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .pain-card p {
+            font-size: 1.125rem;
+            color: #475569;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .pain-microcopy {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 1.125rem;
+            color: #64748b;
+            font-style: italic;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Solution Section */
+        .solution-section {
+            padding: 100px 0;
+            position: relative;
+            background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4), transparent);
+        }
+        
+        .solution-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .solution-card {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .solution-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, #4169E1, #8AE05E);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .solution-card h3 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+        
+        .solution-card p {
+            font-size: 1rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        /* Product Preview Tabs */
+        .product-preview {
+            padding: 100px 0;
+        }
+        
+        .preview-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .tab-btn {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-btn.active,
+        .tab-btn:hover {
+            background: linear-gradient(135deg, #4169E1, #8AE05E);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        
+        .preview-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .preview-card {
+            display: none;
+            text-align: center;
+        }
+        
+        .preview-card.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .preview-card img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            margin-bottom: 1.5rem;
+        }
+        
+        .preview-caption {
+            font-size: 1rem;
+            color: #64748b;
+            margin: 0;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Social Proof Section */
+        .social-proof-section {
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .proof-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+        
+        .stat-number {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-desc {
+            font-size: 0.875rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        .proof-subtitle {
+            text-align: center;
+            font-size: 1.125rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        /* Final CTA Section */
+        .final-cta-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, rgba(65, 105, 225, 0.05), rgba(138, 224, 94, 0.05));
+            position: relative;
+        }
+        
+        .final-cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8), transparent);
+            backdrop-filter: blur(20px);
+        }
+        
+        .cta-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-content h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .cta-content > p {
+            font-size: 1.25rem;
+            color: #475569;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+        
+        .final-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            margin-bottom: 1.5rem;
+        }
+        
+        .final-cta-btn:hover {
+            background: linear-gradient(135deg, #4169E1, #8AE05E);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(65, 105, 225, 0.3);
+        }
+        
+        .final-cta-btn i {
+            font-size: 20px;
+        }
+        
+        .cta-subtext {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin: 0;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .pain-section, .solution-section, .product-preview, .social-proof-section {
+                padding: 80px 0;
+            }
+            
+            .final-cta-section {
+                padding: 100px 0;
+            }
+            
+            .pain-cards, .solution-cards {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .proof-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .preview-tabs {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .proof-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .final-cta-btn {
+                padding: 18px 32px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </body>
 </html>

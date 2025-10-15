@@ -70,7 +70,7 @@
 
         /* Navigation */
         .navbar {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
@@ -195,7 +195,7 @@
         /* Solution Cards */
         .solution-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             margin-top: 3rem;
             max-width: 900px;
@@ -539,25 +539,12 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <h1 class="hero-headline">Injured players don't win games.</h1>
+            <h1 class="hero-headline">Best players are the<br>available ones.</h1>
             <p class="hero-subheadline">
                 BallerAI helps football teams and players prevent injuries through AI-driven load, recovery, and nutrition tracking.
             </p>
             
             <div class="solution-cards">
-                <a href="individual-players.html" class="solution-card players">
-                    <div class="card-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3 class="card-title">For Players</h3>
-                    <p class="card-description">
-                        Personalized training plans, recovery protocols, and nutrition tracking to optimize your performance and prevent injuries.
-                    </p>
-                    <span class="card-cta">
-                        Get Started →
-                    </span>
-                </a>
-
                 <a href="teams.html" class="solution-card teams">
                     <div class="card-icon">
                         <i class="fas fa-users"></i>
@@ -568,6 +555,19 @@
                     </p>
                     <span class="card-cta">
                         Learn More →
+                    </span>
+                </a>
+
+                <a href="individual-players.html" class="solution-card players">
+                    <div class="card-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="card-title">For Players</h3>
+                    <p class="card-description">
+                        Personalized training plans, recovery protocols, and nutrition tracking to optimize your performance and prevent injuries.
+                    </p>
+                    <span class="card-cta">
+                        Get Started →
                     </span>
                 </a>
             </div>
